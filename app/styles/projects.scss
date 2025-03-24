@@ -1,0 +1,74 @@
+.card-project {
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  overflow: hidden;
+  z-index: 10;
+  touch-action: none;
+  box-shadow: 0 0 5px -5px var(--color1), 0 0 5px -5px var(--color2),
+    0 0 5px -5px transparent, 0 0 5px -5px transparent,
+    0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  will-change: transform, filter;
+  background-color: #000000e6;
+  background-image: var(--front);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform-origin: center;
+  border: 1.5px solid #ce9ffb;
+}
+
+.container-title-project {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba(1, 2, 16, 0.827);
+}
+.title-project {
+  font-family: var(--font-genos);
+  font-stretch: condensed;
+}
+.card-project.drinksaver {
+  --color1: var(--drinksaver1);
+  --color2: var(--drinksaver2);
+  --front: var(--drinksaverfront);
+}
+.card-project.pokemon {
+  --color1: var(--pokemon1);
+  --color2: var(--pokemon2);
+  --front: var(--pokemonfront);
+}
+.card-project:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.card-project:after {
+  opacity: 1;
+  background-image: url("/images/glitch.gif"),
+    linear-gradient(
+      125deg,
+      #ff008450 15%,
+      #fca40040 30%,
+      #ffff0030 40%,
+      #00ff8a20 60%,
+      #00cfff40 70%,
+      #cc4cfa50 85%
+    );
+  background-position: 50% 50%;
+  background-size: 100%;
+  z-index: 2;
+  mix-blend-mode: color-dodge;
+}

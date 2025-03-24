@@ -1,0 +1,119 @@
+.navigation {
+  bottom: 20px;
+  left: 50%;
+  width: 80%;
+  background-color: transparent;
+  z-index: 20;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  transform: translateX(-50%);
+}
+
+.navigation-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: max-height 0.3s ease-in-out;
+  border-image: url(/images/button.svg) 0 20 fill;
+  border-width: 20px;
+  border-style: solid;
+}
+.container-button-nav {
+  display: none;
+}
+.menu-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+  padding: 5px;
+}
+
+.square {
+  width: 6px;
+  height: 6px;
+  background-color: var(--neon-violet);
+  margin: 2.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px var(--neon-violet), 0 0 10px var(--neon-violet),
+    0 0 20px var(--neon-violet);
+}
+
+.navigation-link.active {
+  color: var(--neon-violet) !important;
+  text-shadow: 0 0 10px var(--neon-violet), 0 0 20px var(--neon-violet),
+    0 0 30px var(--neon-violet);
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: none;
+    background-color: rgba(0, 0, 0, 0.686);
+  }
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.686);
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+    border-image-source: none;
+    border-width: 0;
+    border-style: none;
+  }
+  .container-button-nav {
+    width: 100%;
+    display: flex;
+  }
+
+  .navigation-list.open {
+    max-height: 350px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+.navigation-list li:last-child {
+  padding-bottom: 18px;
+}
+
+@keyframes moveBall {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-30px);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateY(-30px);
+  }
+}
+
+.animate-ball {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: var(--neon-violet);
+  box-shadow: 0 0 10px var(--neon-violet), 0 0 20px var(--neon-violet),
+    0 0 30px var(--neon-violet), 0 0 40px var(--neon-violet),
+    0 0 50px var(--neon-violet);
+  border-radius: 50%;
+  z-index: 5;
+  animation: moveBall 2s linear infinite;
+  opacity: 0;
+}
+
+.relative.active .animate-ball {
+  opacity: 1;
+}

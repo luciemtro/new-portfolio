@@ -1,0 +1,110 @@
+:root {
+  --colorone: rgba(178, 249, 252, 0.751);
+  --colortwo: rgba(172, 71, 255, 0.848);
+}
+#header,
+.card-header,
+.card-header2,
+.card-header3 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card-header,
+.card-header2,
+.card-header3 {
+  z-index: 10;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-header {
+  background-image: linear-gradient(
+      95deg,
+      rgb(7, 0, 10),
+      transparent 60%,
+      rgb(7, 0, 10)
+    ),
+    url("/images/header.webp");
+}
+
+/* Répéter pour les autres images d'en-tête */
+.card-header2 {
+  background-image: linear-gradient(
+      95deg,
+      rgb(7, 0, 10),
+      transparent 60%,
+      rgb(7, 0, 10)
+    ),
+    url("/images/header2.webp");
+}
+
+.card-header3 {
+  background-image: linear-gradient(
+      95deg,
+      rgb(7, 0, 10),
+      transparent 60%,
+      rgb(7, 0, 10)
+    ),
+    url("/images/header3.webp");
+}
+/* Before and after pseudo-elements */
+.card-header:before,
+.card-header2:before,
+.card-header3:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.5;
+  mix-blend-mode: color-dodge;
+  background-position: 50% 50%;
+  background-size: 200% 200%;
+  background-image: linear-gradient(
+    115deg,
+    transparent 0%,
+    var(--colorone) 25%,
+    transparent 47%,
+    var(--colortwo) 53%,
+    transparent 100%
+  );
+  filter: brightness(0.5) contrast(1);
+  z-index: 1;
+}
+
+.container-text-header {
+  top: 35%;
+  left: 5%;
+  width: 85%;
+}
+.typing-effect-header {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation for transitions */
+.card-header.active:before,
+.card-header:before {
+  animation: none;
+  background-image: linear-gradient(
+    110deg,
+    rgb(7, 0, 10),
+    var(--colorone) 45%,
+    var(--colortwo) 52%,
+    rgb(7, 0, 10)
+  );
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    height: 90vh;
+  }
+}

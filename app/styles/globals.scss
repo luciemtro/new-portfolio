@@ -1,0 +1,169 @@
+@use "./header.scss";
+@use "./navigation.scss";
+@use "./about.scss";
+@use "./competences.scss";
+@use "./projects.scss";
+@use "./experiences.scss";
+@use "./contact.scss";
+@use "./root.scss";
+@use "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap");
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  color: var(--color-font);
+  overflow-x: hidden;
+  background-image: linear-gradient(
+      rgba(17, 14, 19, 0.964),
+      rgb(21, 17, 22),
+      rgba(9, 0, 14, 0.952),
+      rgb(8, 8, 8),
+      rgba(24, 17, 27, 0.988)
+    ),
+    url("/images/bg-transparent.png");
+  background-repeat: repeat;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus select:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(25, 20, 34) inset !important;
+  box-shadow: 0 0 0px 1000px rgb(25, 20, 34) inset !important;
+  background-color: transparent !important;
+  -webkit-text-fill-color: white !important;
+}
+
+.text-shadow {
+  text-shadow: 0 0 5px black, 0 0 5px black;
+}
+.font-title {
+  font-family: var(--font-zen-dots);
+  font-stretch: condensed;
+  font-weight: 400;
+  font-size: 4rem;
+}
+.font-second-title {
+  font-family: var(--font-zen-dots);
+  font-stretch: condensed;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.font-basic-tall {
+  font-family: var(--font-genos);
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.font-basic {
+  font-family: var(--font-genos);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.font-navigation {
+  font-family: var(--font-genos);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.button {
+  align-items: center;
+  border-style: solid;
+  border-width: 0 20px;
+  cursor: pointer;
+  display: inline-flex;
+  height: 60px;
+  justify-content: center;
+  min-width: 250px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.puce--violet {
+  border-image: url(/images/button.svg) 0 20 fill;
+  color: var(--neon-violet);
+  padding: 10px 30px;
+}
+
+.scale {
+  transition: transform 0.2s ease-in-out;
+}
+.scale:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 5px #b300ff, 0 0 10px #b300ff;
+}
+
+/* Écrans moyens */
+@media screen and (max-width: 1024px) {
+  .font-title {
+    font-size: 3rem;
+  }
+  .font-basic {
+    font-size: 1.1rem;
+  }
+  .font-second-title {
+    font-size: 2rem;
+  }
+  .font-basic-tall {
+    font-size: 1.5rem;
+  }
+  .font-navigation {
+    font-size: 1.3rem;
+  }
+}
+
+/* Tablettes */
+@media screen and (max-width: 768px) {
+  .font-title {
+    font-size: 2.5rem;
+  }
+  .font-basic {
+    font-size: 1rem;
+  }
+  .font-second-title {
+    font-size: 1.5rem;
+  }
+  .font-basic-tall {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 480px) {
+  .font-title {
+    font-size: 2rem;
+  }
+  .font-basic {
+    font-size: 1rem;
+  }
+  .font-second-title {
+    font-size: 1.2rem;
+  }
+  .font-basic-tall {
+    font-size: 1.2rem;
+  }
+}

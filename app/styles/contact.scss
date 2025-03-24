@@ -1,0 +1,89 @@
+#contact {
+  padding-bottom: 150px;
+  overflow: hidden;
+}
+
+.contact-form {
+  width: 70%;
+}
+.champs {
+  transition: border-color 0.3s ease;
+  outline: none;
+  padding: 10px;
+  background-color: rgb(25, 20, 34);
+}
+/* Pour mettre en évidence l'input en cours de saisie */
+.champs:focus {
+  border: 1.5px solid var(--neon-violet);
+  box-shadow: 0 0 5px var(--neon-violet);
+}
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 85%;
+  }
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    text-shadow: 1px 1px 0 --neon-violet, -1px -1px 0 --neon-violet;
+  }
+  20% {
+    transform: translate(-1px, -1px);
+    text-shadow: 1px 1px 0 --neon-violet, -1px -1px 0 --neon-violet;
+  }
+  40% {
+    transform: translate(1px, 1px);
+    text-shadow: 1px 1px 0 --neon-violet, -1px -1px 0 --neon-violet;
+  }
+  60% {
+    transform: translate(-1px, -1px);
+    text-shadow: 1px 1px 0 --neon-violet, -1px -1px 0 --neon-violet;
+  }
+  80% {
+    transform: translate(1px, 1px);
+    text-shadow: 1px 1px 0 --neon-violet, -1px -1px 0 --neon-violet;
+  }
+  100% {
+    transform: translate(0);
+    text-shadow: 1px 1px 0 --neon-violet, -1px -1px 0 --neon-violet;
+  }
+}
+/* Clignotement des labels du formulaire de contact */
+@keyframes color-glitch {
+  0% {
+    color: black;
+  }
+  25% {
+    color: var(--neon-violet);
+  }
+  50% {
+    color: black;
+  }
+  75% {
+    color: var(--neon-violet);
+  }
+  100% {
+    color: black;
+  }
+}
+
+.glitch-form {
+  display: inline-block;
+  position: relative;
+  animation: color-glitch 3s infinite ease-in-out;
+}
+
+.glitch-form::before,
+.glitch-form::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(179, 0, 255, 0.6);
+  clip-path: inset(0 0 0 0);
+}
+
+.glitch-form::after {
+  left: 1px;
+  text-shadow: -1px 0 var(--neon-violet);
+}
