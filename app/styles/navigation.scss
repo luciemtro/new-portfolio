@@ -37,17 +37,16 @@
 .square {
   width: 6px;
   height: 6px;
-  background-color: var(--neon-violet);
+  background-color: var(--neon-cyan);
   margin: 2.5px;
   transition: all 0.3s ease;
-  box-shadow: 0 0 5px var(--neon-violet), 0 0 10px var(--neon-violet),
-    0 0 20px var(--neon-violet);
+  box-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan),
+    0 0 20px var(--neon-cyan);
 }
 
 .navigation-link.active {
-  color: var(--neon-violet) !important;
-  text-shadow: 0 0 10px var(--neon-violet), 0 0 20px var(--neon-violet),
-    0 0 30px var(--neon-violet);
+  color: var(--neon-cyan) !important;
+  text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
 }
 
 @media (max-width: 768px) {

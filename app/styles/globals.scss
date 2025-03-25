@@ -177,7 +177,7 @@ select:-webkit-autofill:focus select:-webkit-autofill:active {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: black;
-  background: linear-gradient(115deg, #00ff88, cyan, #db27ff 60%);
+  background: linear-gradient(115deg, #fbf3ff, rgb(211, 206, 214), #7a767a);
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
   position: relative;
   &:after {
