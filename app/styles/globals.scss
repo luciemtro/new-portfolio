@@ -11,6 +11,7 @@
 @import "./projects.scss";
 @import "./experiences.scss";
 @import "./contact.scss";
+@import "./cv.scss";
 
 body {
   color: var(--color-font);
@@ -170,7 +171,7 @@ select:-webkit-autofill:focus select:-webkit-autofill:active {
   background-size: 300% 300%;
   width: fit-content;
   padding-left: 20px;
-  padding-right: 30px;
+  padding-right: 50px;
   font-family: var(--font-genos);
   font-weight: 900;
   font-size: 1.2rem;
