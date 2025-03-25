@@ -1,0 +1,194 @@
+/* Object contenant les techskills*/
+$techs: html, css, sass, js, next, sql, node, react, csharp, asp, ts;
+
+/* Boucle pour donner le nom des teckskills en class*/
+@each $tech in $techs {
+  .card.#{$tech} {
+    --front: var(--#{$tech}front);
+  }
+}
+
+.card {
+  width: 170px;
+  height: 170px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  z-index: 10;
+  touch-action: none;
+  background-color: #000000e6;
+  background-image: var(--front);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform-origin: center;
+  border: 1.5px solid #ce9ffb;
+  will-change: transform, filter;
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 5px -5px var(--cardBorder1), 0 0 5px -5px var(--cardBorder2),
+    0 0 5px -5px transparent, 0 0 5px -5px transparent,
+    0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+
+  &.active,
+  &:hover {
+    box-shadow: 0 0 0 2px var(--cardBorder1), 0 0 0 4px var(--cardBorder2),
+      0 0 10px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    animation: none;
+    transition: box-shadow 0.1s ease-out;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    mix-blend-mode: color-dodge;
+    transition: all 0.33s ease;
+  }
+
+  &::before {
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-image: linear-gradient(
+      115deg,
+      transparent 0%,
+      var(--cardLinear1) 25%,
+      transparent 47%,
+      transparent 53%,
+      var(--cardLinear2) 75%,
+      transparent 100%
+    );
+    filter: brightness(0.5) contrast(1);
+    z-index: 1;
+  }
+
+  &::after {
+    opacity: 0.75;
+    background-image: url("/images/bokeh.gif"),
+      linear-gradient(
+        125deg,
+        #ff008450 15%,
+        #ffff0030 40%,
+        #00f2ff20 60%,
+        #b700ff40 70%,
+        #cc4cfa50 85%
+      );
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-blend-mode: overlay;
+    z-index: 2;
+    filter: brightness(1) contrast(1);
+  }
+
+  &.active::after,
+  &:hover::after {
+    filter: brightness(1) contrast(1);
+    opacity: 1;
+    background-image: none;
+  }
+
+  &.active::before,
+  &:hover::before {
+    background-image: linear-gradient(
+      110deg,
+      transparent 25%,
+      var(--cardLinear1) 48%,
+      var(--cardLinear2) 52%,
+      transparent 75%
+    );
+    background-position: 50% 50%;
+    background-size: 250% 250%;
+    opacity: 0.88;
+    filter: brightness(0.66) contrast(1.33);
+    transition: none;
+    animation: none;
+  }
+
+  &.active::before,
+  &:hover::before,
+  &.active::after,
+  &:hover::after {
+    animation: none;
+    transition: none;
+  }
+
+  &.animated {
+    transition: none;
+    animation: holoCard 12s ease 0s 1;
+
+    &::before {
+      transition: none;
+      animation: holoGradient 12s ease 0s 1;
+    }
+
+    &::after {
+      transition: none;
+      animation: holoSparkle 12s ease 0s 1;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 150px;
+    height: 150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 130px;
+    height: 130px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.operator {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 6vh;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  perspective: 2000px;
+  position: relative;
+  z-index: 1;
+  transform: translate3d(0.1px, 0.1px, 0.1px);
+  padding: 30px;
+
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+  }
+
+  .card {
+    // Animation delay personnalisée pour les 3 premières cartes
+    &:nth-child(2),
+    &:nth-child(2)::before,
+    &:nth-child(2)::after {
+      animation-delay: 0.25s;
+    }
+
+    &:nth-child(3),
+    &:nth-child(3)::before,
+    &:nth-child(3)::after {
+      animation-delay: 0.5s;
+    }
+
+    &:nth-child(4),
+    &:nth-child(4)::before,
+    &:nth-child(4)::after {
+      animation-delay: 0.75s;
+    }
+  }
+}

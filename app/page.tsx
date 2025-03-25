@@ -1,7 +1,7 @@
 import Header from "./components/header";
 import Navigation from "./components/navigation";
 import About from "./components/about";
-import Competences from "./components/competences";
+import TechSkills from "./components/techskills";
 import Experiences from "./components/experiences";
 import Projects from "./components/projects";
 import CV from "./components/cv";
@@ -14,7 +14,7 @@ export default function Home() {
         <Header />
         <Navigation />
         <About />
-        <Competences />
+        <TechSkills />
         <Experiences />
         <Projects />
         <CV />

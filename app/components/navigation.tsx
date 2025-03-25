@@ -53,7 +53,7 @@ export default function Navigation() {
         {[
           { id: "header", label: "Accueil" },
           { id: "about", label: "À propos" },
-          { id: "competences", label: "TechSkills" },
+          { id: "techSkills", label: "TechSkills" },
           { id: "experiences", label: "Parcours" },
           { id: "projects", label: "Projets" },
           { id: "cv", label: "CV" },

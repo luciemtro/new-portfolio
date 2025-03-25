@@ -1,11 +1,13 @@
+@use "./animations.scss";
+@use "./root.scss";
 @use "./header.scss";
 @use "./navigation.scss";
 @use "./about.scss";
-@use "./competences.scss";
+@use "./techskills.scss";
 @use "./projects.scss";
 @use "./experiences.scss";
 @use "./contact.scss";
-@use "./root.scss";
+
 @use "tailwindcss";
 
 @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap");
