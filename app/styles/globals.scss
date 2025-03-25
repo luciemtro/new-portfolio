@@ -34,6 +34,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+input {
+  font-family: var(--font-genos) !important;
+}
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -161,4 +164,18 @@ select:-webkit-autofill:focus select:-webkit-autofill:active {
   .font-basic-tall {
     font-size: 1.2rem;
   }
+}
+
+.bullet {
+  background-size: 300% 300%;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 30px;
+  font-family: var(--font-genos);
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: black;
+  background: linear-gradient(115deg, #00ff88, cyan, #db27ff 60%);
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
 }

@@ -115,3 +115,15 @@
     filter: brightness(1.2) contrast(1.25);
   }
 }
+/* Animation pour reflet */
+@keyframes shimmer {
+  0% {
+    background-position: -100% -100%;
+  }
+  50% {
+    background-position: 200% 200%;
+  }
+  100% {
+    background-position: 300% 300%;
+  }
+}

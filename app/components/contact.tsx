@@ -93,7 +93,7 @@ export default function Contact() {
           className="contact-form flex flex-col gap-5"
         >
           <div className=" flex flex-col gap-2">
-            <label htmlFor="name" className="glitch-form font-basic">
+            <label htmlFor="name" className="bullet">
               Nom :
             </label>
             <input
@@ -107,7 +107,7 @@ export default function Contact() {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="glitch-form font-basic">
+            <label htmlFor="email" className="bullet">
               Email :
             </label>
             <input
@@ -121,7 +121,7 @@ export default function Contact() {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="message" className="glitch-form font-basic">
+            <label htmlFor="message" className="bullet">
               Message :
             </label>
             <textarea
