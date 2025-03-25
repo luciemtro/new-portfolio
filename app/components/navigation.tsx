@@ -64,7 +64,7 @@ export default function Navigation() {
             <a
               href={`#${id}`}
               className={`navigation-link relative transition duration-300 font-navigation ${
-                activeSection === id ? "active" : "text-gray-500"
+                activeSection === id ? "active" : "text-gray-600"
               }`}
             >
               {label}
