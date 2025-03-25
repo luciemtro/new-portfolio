@@ -1,5 +1,6 @@
 /* Object contenant les techskills*/
-$techs: html, css, sass, js, next, sql, node, react, csharp, asp, ts;
+$techs: html, css, sass, js, next, sql, node, react, csharp, asp, ts, prisma,
+  supabase;
 
 /* Boucle pour donner le nom des teckskills en class*/
 @each $tech in $techs {

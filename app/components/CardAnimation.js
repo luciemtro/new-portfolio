@@ -2,6 +2,19 @@
 "use client";
 import React, { useEffect } from "react";
 import $ from "jquery";
+const skills = [
+  { name: "HTML", className: "html" },
+  { name: "CSS", className: "css" },
+  { name: "SASS", className: "sass" },
+  { name: "JavaScript", className: "js" },
+  { name: "React", className: "react" },
+  { name: "Next.js", className: "next" },
+  { name: "Node.js", className: "node" },
+  { name: "TypeScript", className: "ts" },
+  { name: "SQL", className: "sql" },
+  { name: "Prisma", className: "prisma" },
+  { name: "Supabase", className: "supabase" },
+];
 
 const CardAnimation = () => {
   useEffect(() => {
@@ -64,21 +77,21 @@ const CardAnimation = () => {
       $cards.off("mouseout touchend touchcancel");
     };
   }, []);
+
   return (
     <div className="card-animation">
-      <div className="cards flex justify-center">
-        <div className="card html animated"></div>
-        <div className="card css animated"></div>
-        <div className="card sass animated"></div>
-        <div className="card js animated"></div>
-        <div className="card react animated"></div>
-        <div className="card next animated"></div>
-        <div className="card node animated">
-          {" "}
-          <div className="bg-node"></div>
-        </div>
-        <div className="card ts animated"></div>
-        <div className="card sql animated"></div>
+      <div className="cards flex justify-center flex-wrap gap-4">
+        {skills.map((skill) => (
+          <div
+            key={skill.name}
+            className="container-card flex flex-col items-center"
+          >
+            <div className={`card ${skill.className} animated`} />
+            <span className="metallic-text name-card text-sm text-gray-500 mt-2">
+              {skill.name}
+            </span>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -6,16 +6,17 @@
   --font-genos: "Genos", sans-serif;
   --font-zen-dots: "Zen Dots", sans-serif;
   --color-font: #f4eafd;
+
   /* Cards techskills */
-  --cardLinear1: rgb(192, 152, 202); /* mauve doux */
-  --cardLinear2: rgb(245, 234, 250); /* lumière lavande */
-  --cardLinear3: rgb(0, 255, 255); /* cyan néon 💧 */
-  --cardLinear4: rgb(255, 0, 153); /* fuchsia flashy 💘 */
-  --cardLinear5: rgb(67, 37, 84); /* violet foncé encre */
+  --cardLinear1: rgb(192, 152, 202);
+  --cardLinear2: rgb(245, 234, 250);
+  --cardLinear3: rgb(0, 255, 255);
+  --cardLinear4: rgb(255, 0, 153);
+  --cardLinear5: rgb(67, 37, 84);
 
   --cardBorder1: rgb(240, 206, 247);
   --cardBorder2: rgb(171, 158, 183);
-  --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
+  --back: url("https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg");
   --jsfront: url("/images/techskills/javascript.svg");
   --nextfront: url("/images/techskills/nextjs.svg");
   --htmlfront: url("/images/techskills/html.svg");
@@ -27,6 +28,8 @@
   --csharpfront: url("/images/techskills/csharp.svg");
   --aspfront: url("/images/techskills/dotnet.svg");
   --tsfront: url("/images/techskills/typescript.svg");
+  --prismafront: url("/images/techskills/prisma.svg");
+  --supabasefront: url("/images/techskills/supabase.svg");
   --drinksaverfront: url("/images/techskills/drinksaver.svg");
   --pokemonfront: url("/images/techskills/pokemon.jpg");
 }
