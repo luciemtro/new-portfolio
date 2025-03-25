@@ -90,7 +90,7 @@ export default function Contact() {
         </ul>
         <form
           onSubmit={handleSubmit}
-          className="contact-form flex flex-col gap-5"
+          className="contact-form flex flex-col gap-8"
         >
           <div className=" flex flex-col gap-2">
             <label htmlFor="name" className="bullet">
