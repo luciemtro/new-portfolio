@@ -3,10 +3,10 @@ import { useState, useEffect, useRef } from "react";
 
 export default function About() {
   const paragraphs = [
-    "Bonjour et bienvenue sur mon portfolio ! 👩‍💻 Actuellement en formation en développement web, je suis passionnée par la création et l’innovation numérique.",
-    "Mon domaine de prédilection est l’intégration web : transformer des maquettes en expériences interactives captivantes est un véritable plaisir. Aujourd’hui, je me prépare à intégrer le marché de l’emploi avec l’enthousiasme de mettre mes compétences en pratique et de relever des défis concrets.",
-    "Polyvalente et curieuse, j’aime explorer les technologies, du front-end au back-end. Mon objectif est de collaborer avec une équipe dynamique, partager des idées innovantes et concevoir des solutions qui ont un impact.",
-    "Si vous recherchez une développeuse motivée, enthousiaste et prête à coder avec passion, je serais ravie d’échanger avec vous ! 😊",
+    "Bienvenue sur mon portfolio ! 👩‍💻 Je suis développeuse web passionnée, en reconversion après un parcours de vie intense qui m’a forgée. Aujourd’hui, je transforme ma résilience en code, et mes idées en projets concrets.",
+    "J’adore créer des expériences web complètes, du front-end au back-end, avec une affinité particulière pour Next.js que j’utilise comme base pour la plupart de mes projets. J’aime donner vie aux interfaces, structurer les données, et bâtir des applications qui ont du sens.",
+    "Polyvalente, curieuse et toujours en train d’apprendre, je me plonge aussi bien dans le design que dans l’architecture d’une base de données. Je cherche à rejoindre une équipe bienveillante, motivée, où je pourrai évoluer, apporter mes idées et coder avec cœur.",
+    "Si vous recherchez une développeuse impliquée, créative, et qui met autant d’énergie dans ses lignes de code que dans l’humain derrière l’écran, je serais ravie d’échanger avec vous ! ",
   ];
 
   const [displayedText, setDisplayedText] = useState("");
