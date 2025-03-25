@@ -175,25 +175,10 @@ $techs: html, css, sass, js, next, sql, node, react, csharp, asp, ts, prisma,
   @media screen and (min-width: 600px) {
     flex-direction: row;
   }
-
-  .card {
-    // Animation delay personnalisée pour les 3 premières cartes
-    &:nth-child(2),
-    &:nth-child(2)::before,
-    &:nth-child(2)::after {
-      animation-delay: 0.25s;
-    }
-
-    &:nth-child(3),
-    &:nth-child(3)::before,
-    &:nth-child(3)::after {
-      animation-delay: 0.5s;
-    }
-
-    &:nth-child(4),
-    &:nth-child(4)::before,
-    &:nth-child(4)::after {
-      animation-delay: 0.75s;
-    }
-  }
+}
+.name-card {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: var(--font-zen-dots);
 }

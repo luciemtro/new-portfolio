@@ -1,16 +1,12 @@
 .metallic-text {
-  background: linear-gradient(
-    60deg,
-    rgb(192, 152, 202),
-    rgb(245, 234, 250),
-    rgb(192, 152, 202)
-  );
+  background: linear-gradient(115deg, white, rgb(211, 206, 218), white 55%);
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   position: relative;
-  animation: shimmer 3s infinite linear;
+  animation: shimmer 4s infinite linear;
+  font-family: var(--font-zen-dots);
 }
 
 @keyframes shimmer {

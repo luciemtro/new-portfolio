@@ -66,7 +66,7 @@ export default function About() {
       className=" w-screen lg:min-h-screen max-h-fit"
       aria-labelledby="about-title"
     >
-      <h1 id="about-title" className="font-title text-center">
+      <h1 id="about-title" className="font-title text-center p-10">
         À propos de moi
       </h1>
 

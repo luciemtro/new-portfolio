@@ -54,7 +54,7 @@ export default function Contact() {
       id="contact"
       className="contact min-h-screen w-screen flex flex-col items-center"
     >
-      <h2 className="font-title text-center ">Mon contact</h2>
+      <h2 className="font-title text-center p-10">Mon contact</h2>
       <div className="w-full max-w-15xl flex flex-col gap-10 items-center">
         <ul className="flex flex-col gap-2">
           <li className="flex items-center gap-2">

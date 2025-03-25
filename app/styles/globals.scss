@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "./animations.scss";
 @import "./font.scss";
 @import "./root.scss";
@@ -8,9 +11,7 @@
 @import "./projects.scss";
 @import "./experiences.scss";
 @import "./contact.scss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 body {
   color: var(--color-font);
   overflow-x: hidden;

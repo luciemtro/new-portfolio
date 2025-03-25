@@ -87,9 +87,7 @@ const CardAnimation = () => {
             className="container-card flex flex-col items-center"
           >
             <div className={`card ${skill.className} animated`} />
-            <span className="metallic-text name-card text-sm text-gray-500 mt-2">
-              {skill.name}
-            </span>
+            <span className="metallic-text name-card">{skill.name}</span>
           </div>
         ))}
       </div>

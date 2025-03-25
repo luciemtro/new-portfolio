@@ -1,7 +1,9 @@
 export default function Cv() {
   return (
     <section id="cv" className="w-screen flex flex-col items-center h-auto">
-      <h2 className="font-title text-2xl text-center ">Mon Curriculum Vitae</h2>
+      <h2 className="font-title text-2xl text-center p-10">
+        Mon Curriculum Vitae
+      </h2>
       <div className="flex items-center justify-center">
         <a
           href="https://github.com/luciemtro/portefolio/raw/main/app/components/cvluciemonteiro.pdf"
