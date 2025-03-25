@@ -37,11 +37,10 @@
 .square {
   width: 6px;
   height: 6px;
-  background-color: var(--neon-cyan);
+  background: linear-gradient(90deg, #f5ebff, #f1e6f8, #b3b0b6);
   margin: 2.5px;
   transition: all 0.3s ease;
-  box-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan),
-    0 0 20px var(--neon-cyan);
+  box-shadow: 0 0 5px #e6e6e6, 0 0 10px #b0b0b0, 0 0 20px #b0b0b0;
 }
 
 .navigation-link.active {
