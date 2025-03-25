@@ -59,13 +59,18 @@ export default function Contact() {
         <ul className="flex flex-col gap-2">
           <li className="flex items-center gap-2">
             <FaGithub size={30} />
-            <a href="https://github.com/luciemtro" aria-label="Voir mon GitHub">
+            <a
+              href="https://github.com/luciemtro"
+              aria-label="Voir mon GitHub"
+              className="metallic-text"
+            >
               Mon Github
             </a>
           </li>
           <li className="flex items-center gap-2">
             <FaLinkedin size={30} />
             <a
+              className="metallic-text"
               href="https://www.linkedin.com/in/lucie-monteiro/"
               aria-label="Voir mon LinkedIn"
             >
@@ -75,6 +80,7 @@ export default function Contact() {
           <li className="flex items-center gap-2">
             <MdFolder size={30} />
             <a
+              className="metallic-text"
               href="https://github.com/luciemtro/new-portefolio"
               aria-label="Voir le code source du portfolio sur GitHub"
             >

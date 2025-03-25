@@ -18,9 +18,10 @@ $projects: drinksaver, pokemon, lunova, nextflix;
   overflow: hidden;
   z-index: 10;
   touch-action: none;
-  box-shadow: 0 0 5px -5px var(--color1), 0 0 5px -5px var(--color2),
+  box-shadow: 0 0 5px -5px var(--cardBorder1), 0 0 5px -5px var(--cardBorder2),
     0 0 5px -5px transparent, 0 0 5px -5px transparent,
     0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+
   transition: transform 0.5s ease, box-shadow 0.2s ease;
   will-change: transform, filter;
   background-color: #000000e6;
@@ -30,11 +31,13 @@ $projects: drinksaver, pokemon, lunova, nextflix;
   background-position: 50% 50%;
   transform-origin: center;
   border: 1.5px solid #ce9ffb;
+  &.active,
   &:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 5px -5px var(--color1), 0 0 5px -5px var(--color2),
-      0 0 5px -5px transparent, 0 0 5px -5px transparent,
-      0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 2px var(--cardBorder1), 0 0 0 4px var(--cardBorder2),
+      0 0 10px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    animation: none;
+    transition: box-shadow 0.1s ease-out;
   }
   &:after {
     content: "";
@@ -57,14 +60,12 @@ $projects: drinksaver, pokemon, lunova, nextflix;
     background: linear-gradient(
       135deg,
       rgba(0, 255, 255, 0.8) 0%,
-      // Cyan Néon avec 80% d'opacité
       rgba(255, 0, 255, 0.6) 25%,
-      // Magenta Électrique avec 60% d'opacité
+
       rgba(0, 255, 42, 0.4) 50%,
-      // Jaune Acide avec 40% d'opacité
+
       rgba(0, 0, 160, 0.6) 75%,
-      // Bleu Profond avec 60% d'opacité
-      rgba(255, 20, 147, 0.8) 100% // Rose Fuchsia avec 80% d'opacité
+      rgba(255, 20, 147, 0.8) 100%
     );
   }
 }

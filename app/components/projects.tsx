@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 export default function Projects() {
   return (
     <section id="projects" className="projects min-h-screen w-screen">
-      <h2 className="font-title text-center">Mes projets</h2>
+      <h2 className="font-title text-center p-10">Mes projets</h2>
       <div className=" flex flex-wrap justify-center">
         <article className="flex flex-col items-center gap-4">
           <a href="https://pokemon-green-gamma.vercel.app" target="_blank">
