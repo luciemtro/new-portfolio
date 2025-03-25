@@ -55,15 +55,12 @@ $techs: html, css, sass, js, next, sql, node, react, csharp, asp, ts;
 
   &::before {
     background-position: 50% 50%;
-    background-size: 100%;
+    background-size: 300% 300%;
     background-image: linear-gradient(
       115deg,
-      transparent 0%,
-      var(--cardLinear1) 25%,
-      transparent 47%,
-      transparent 53%,
-      var(--cardLinear2) 75%,
-      transparent 100%
+      var(--cardLinear1) 0%,
+      var(--cardLinear2) 47%,
+      var(--cardLinear3) 53%
     );
     filter: brightness(0.5) contrast(1);
     z-index: 1;
@@ -74,11 +71,15 @@ $techs: html, css, sass, js, next, sql, node, react, csharp, asp, ts;
     background-image: url("/images/bokeh.gif"),
       linear-gradient(
         125deg,
-        #ff008450 15%,
-        #ffff0030 40%,
-        #00f2ff20 60%,
-        #b700ff40 70%,
-        #cc4cfa50 85%
+        #d58fff55 10%,
+        // lavande rosée
+        #ffffff30 30%,
+        // flash blanc léger
+        #9aefff25 50%,
+        // bleu clair éthéré
+        #ae60ff40 65%,
+        // violet profond doux
+        #ffaad450 80% // rose pêche pastel
       );
     background-position: 50% 50%;
     background-size: 100%;
