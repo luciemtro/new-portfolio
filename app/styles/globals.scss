@@ -1,25 +1,16 @@
-@use "./animations.scss";
-@use "./font.scss";
-@use "./root.scss";
-@use "./header.scss";
-@use "./navigation.scss";
-@use "./about.scss";
-@use "./techskills.scss";
-@use "./projects.scss";
-@use "./experiences.scss";
-@use "./contact.scss";
-
-@use "tailwindcss";
-
-@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap");
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+@import "./animations.scss";
+@import "./font.scss";
+@import "./root.scss";
+@import "./header.scss";
+@import "./navigation.scss";
+@import "./about.scss";
+@import "./techskills.scss";
+@import "./projects.scss";
+@import "./experiences.scss";
+@import "./contact.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   color: var(--color-font);
   overflow-x: hidden;

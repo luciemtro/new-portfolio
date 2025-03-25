@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Lucie Monteiro",
-      url: "https://portefolio-monteiro-lucie.vercel.app",
+      url: "https://portfolio-monteiro-lucie.vercel.app",
     },
   ],
   keywords: [

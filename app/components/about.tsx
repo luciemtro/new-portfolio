@@ -63,10 +63,10 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className=" w-screen lg:min-h-screen max-h-fit p-5"
+      className=" w-screen lg:min-h-screen max-h-fit"
       aria-labelledby="about-title"
     >
-      <h1 id="about-title" className="font-title py-10  text-center">
+      <h1 id="about-title" className="font-title text-center">
         À propos de moi
       </h1>
 
