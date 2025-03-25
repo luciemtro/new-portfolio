@@ -56,7 +56,7 @@ export default function Contact() {
     >
       <h2 className="font-title text-center p-10">Mon contact</h2>
       <div className="w-full max-w-15xl flex flex-col gap-10 items-center">
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-2 pl-6 ">
           <li className="flex items-center gap-2">
             <FaGithub size={30} />
             <a
