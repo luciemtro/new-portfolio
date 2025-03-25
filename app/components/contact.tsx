@@ -135,10 +135,7 @@ export default function Contact() {
               required
             />
           </div>
-          <button
-            type="submit"
-            className="font-basic button puce--violet scale uppercase"
-          >
+          <button type="submit" className="bullet-submit bullet">
             Envoyer
           </button>
         </form>

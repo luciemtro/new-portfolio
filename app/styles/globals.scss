@@ -192,3 +192,13 @@ select:-webkit-autofill:focus select:-webkit-autofill:active {
     z-index: 2;
   }
 }
+
+.bullet-submit {
+  width: 100% !important;
+  height: 50px;
+  clip-path: polygon(0% 0%, 100% 0%, 97% 100%, 0% 100%) !important;
+  &:after {
+    width: 30px !important;
+    height: 10px !important;
+  }
+}
