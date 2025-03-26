@@ -32,11 +32,6 @@ export default function Projects() {
             <h3 className="title-project">Lunova</h3>
           </div>
         </div>
-        <div className="card-project nextflix">
-          <div className="flex justify-center items-center container-title-project">
-            <h3 className="title-project">NextFlix</h3>
-          </div>
-        </div>
       </div>
     </section>
   );

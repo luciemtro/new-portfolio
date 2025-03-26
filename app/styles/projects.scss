@@ -1,5 +1,5 @@
 /* Object contenant les techskills*/
-$projects: drinksaver, pokemon, lunova, nextflix;
+$projects: drinksaver, pokemon, lunova;
 
 /* Boucle pour donner le nom des teckskills en class*/
 @each $project in $projects {
