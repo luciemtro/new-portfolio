@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "TypeScript",
     "développement full-stack",
   ],
+  icons: {
+    icon: "/favicon.png", // chemin depuis /public
+  },
 };
 
 export default function RootLayout({
@@ -44,9 +47,8 @@ export default function RootLayout({
           type="text/css"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
-
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
       <body>{children}</body>
     </html>
